@@ -10,27 +10,27 @@
 <body>
    <div class="bigContainer">
     <div class="ccontainer">
-        <form action="#" method="post">
+        <form action="../../backEnd/signUp.php" method="post">
            <div class="uptext" >
             <img src="../images/logo.jpeg" alt="">
             <p>Sign Up to <span class="myspan">somuk</span></p>
            </div>
            <div class="row fields">
             <div class="inputs">
-               <input style="border: none" class="myInputs" type="text" placeholder="Firstname">
+               <input style="border: none" name="firstname" class="myInputs" type="text" placeholder="Firstname">
             </div>
             <div  class="inputs">
-               <input  style="border: none" class="myInputs" type="text" placeholder="lastname">
+               <input  style="border: none" name="lastname" class="myInputs" type="text" placeholder="lastname">
             </div>
            </div>
            <div class="row phonee">
-            <input type="phone number">
+            <input name="telephone" type="phone number">
            </div>
            <div class="row">
-            <input type="email" placeholder="Enter your email address">
+            <input type="email" name="email" placeholder="Enter your email address">
            </div>
            <div class="row">
-            <input type="password" placeholder="Password">
+            <input type="password" name="password" placeholder="Password">
            </div>
            <div class="cheking row">
              <div class="rememberr">
@@ -42,10 +42,10 @@
              </div>
            </div class="row">
            <div class="row">
-            <input type="submit" value="Login now" >
+            <input type="submit" value="sign up" >
            </div>
            <div class="row account">
-           <p> Already have an account ? </p><a href="./login.html"> <span>Sign up now</span></a>
+           <p> Already have an account ? </p><a href="./login.html"> <span>login in now</span></a>
            </div>
 
         </form>
