@@ -105,7 +105,127 @@
                           <h6>Actions</h6>
                         </div>
                       </div>
-                    
+                      <div class="row1 row1">
+                        <div>
+                          <p>2</p>
+                        </div>
+                        <div>
+                          <h6>Product Title</h6>
+                        </div>
+                        <div>
+                          <h6>Ordered</h6>
+                        </div>
+                        <div>
+                          <h6>Date added</h6>
+                        </div>
+                        <div>
+                          <h6>Provider</h6>
+                        </div>
+                        <div>
+                          <h6>Actions</h6>
+                        </div>
+                      </div>
+                      <div class="row1 row1">
+                        <div>
+                          <p>3</p>
+                        </div>
+                        <div>
+                          <h6>Product Title</h6>
+                        </div>
+                        <div>
+                          <h6>Ordered</h6>
+                        </div>
+                        <div>
+                          <h6>Date added</h6>
+                        </div>
+                        <div>
+                          <h6>Provider</h6>
+                        </div>
+                        <div>
+                          <h6>Actions</h6>
+                        </div>
+                      </div>
+                      <div class="row1 row1">
+                        <div>
+                          <p>4</p>
+                        </div>
+                        <div>
+                          <h6>Product Title</h6>
+                        </div>
+                        <div>
+                          <h6>Ordered</h6>
+                        </div>
+                        <div>
+                          <h6>Date added</h6>
+                        </div>
+                        <div>
+                          <h6>Provider</h6>
+                        </div>
+                        <div>
+                          <h6>Actions</h6>
+                        </div>
+                      </div>
+                      <div class="row1 row1">
+                        <div>
+                          <p>5</p>
+                        </div>
+                        <div>
+                          <h6>Product Title</h6>
+                        </div>
+                        <div>
+                          <h6>Ordered</h6>
+                        </div>
+                        <div>
+                          <h6>Date added</h6>
+                        </div>
+                        <div>
+                          <h6>Provider</h6>
+                        </div>
+                        <div>
+                          <h6>Actions</h6>
+                        </div>
+                      </div>
+                      <div class="row1 row1">
+                        <div>
+                          <p>6</p>
+                        </div>
+                        <div>
+                          <h6>Product Title</h6>
+                        </div>
+                        <div>
+                          <h6>Ordered</h6>
+                        </div>
+                        <div>
+                          <h6>Date added</h6>
+                        </div>
+                        <div>
+                          <h6>Provider</h6>
+                        </div>
+                        <div>
+                          <h6>Actions</h6>
+                        </div>
+                      </div>
+                      <div class="row1 row1">
+                        <div>
+                          <p>7  </p>
+                        </div>
+                        <div>
+                          <h6>Product Title</h6>
+                        </div>
+                        <div>
+                          <h6>Ordered</h6>
+                        </div>
+                        <div>
+                          <h6>Date added</h6>
+                        </div>
+                        <div>
+                          <h6>Provider</h6>
+                        </div>
+                        <div>
+                          <h6>Actions</h6>
+                        </div>
+                      </div>
+                       
 
                 </div>
             </div>
