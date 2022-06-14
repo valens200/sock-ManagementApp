@@ -1,4 +1,17 @@
 <!DOCTYPE html>
+<?php
+include_once "../../backEnd/config.php";
+
+class Getuser extends Connect{
+    public $user;
+    function __construct($id){
+        parent::connect();
+        $result= mysqli_query($this->conn, "SELECT * FROM users WHERE id=".$id."");
+        $this->user = mysqli_fetch_assoc($result);
+    }
+}
+$current = new Getuser($_GET['user']);
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -32,7 +45,7 @@
                 <i class="fa-solid fa-note-sticky"></i>
                 <i class="fa-solid fa-bell"></i>
                 <i class="fa-solid fa-chevron-down"></i>
-                <img src="./jerive.jpg" alt="">
+                <div><?=$current->user['firstname']?></div>
             </div>
 
         </div>
