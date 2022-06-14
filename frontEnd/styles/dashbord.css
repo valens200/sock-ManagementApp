@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #216bff17;
+}
+.down p:hover{
+    background-color: rgba(0, 0, 255, 0.507);
+    color: white;
+    /* padding-bottom: 20px; */
+
+}
+.para p:hover{
+    background-color: rgba(0, 0, 255, 0.507);
+    color: white;
+    padding-bottom: 25px;
+}
+
+.para p{
+    padding: 10px;
+}
+.para{
+    position: absolute;
+}
+.nav{
+    display: flex;
+    justify-content: space-around ;
+    width: 99%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    padding: 10px;
+}
+.nav .input input{
+    width: 40%;
+    height: 90%;
+    background-color:rgba(128, 128, 128, 0.074);
+    border: none;
+}
+.left img{
+    width: 20%;
+    border-radius: 100%;
+    z-index: 100;
+    border-top: 4px solid green
+}
+input::placeholder{
+    padding-left:20px;
+}
+.nav .input{
+    width: 100%;
+    height: 100%;
+}
+.left{
+    width: 20%;     
+}
+.midle{
+    width: 90%;
+}
+.right i{
+    margin-top: 10px;
+}
+.right{
+    width: 10%;
+    float: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.right img{
+    width: 17%;
+    height: 70%;
+    border-radius:100%
+    
+}
+.upper{
+    display: flex;
+}
+.nave{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 50%;
+    margin: 0 auto;
+    float: right;
+}
+.mine{
+    width: 80%;
+}
+.pre{
+    background-color:blue;
+    width: 12%;
+    height: 40px;
+    text-align: center;
+    padding-top:10px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 12%;
+    color:white;
+    font-family: sans-serif;
+}
+.Next{
+    background-color:blue;
+    width: 12%;
+    color:white;
+    font-family: sans-serif;
+    height: 40px;
+    text-align: center;
+    padding-top:10px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+}
+.nave .number{
+    background-color:white;
+    width: 12%;
+    height: 40px;
+    text-align: center;
+    padding-top:10px;
+}
+
+.upper .box img{
+    width: 40%;
+    opacity: 0.5;
+    float: right;
+    border-radius:100%;
+}
+.upper .box .text{
+    width:100%
+}
+.text>h5{
+    color: #1E253D;
+    opacity: 80%;
+}
+.text >h1{
+    color: #216BFF;
+    opacity: 0.5;
+}
+.text > span{
+    color: #1E253D;
+    opacity: 28%;
+}
+.upper .box{
+    width: 40%;
+    border: 1px solid rgba(128, 128, 128, 0.318);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: auto;
+    padding: 30px;
+
+}
+.upper .buttons{
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right:20px;
+    margin-top:30px;
+}
+
+.button button{
+    margin-right: 10px;
+    height: 40px;
+}
+.button2 button,
+.button1 button{
+    padding: 10px;
+    background-color: white;
+    border: 1px solid black;
+}
+.buton3 button{
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+}
+
+.button1, .button2 p{
+    text-align: center;
+}
+
+.table .rowe{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin-left:  auto;
+    margin-right: auto;
+    margin-top: 5%;
+    background-color: #216bff22;
+    padding: 10px;
+    text-align: center;
+}
+.table .row1{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin-left:  auto;
+    margin-right: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.bigSidebar{
+    width: 69%;
+    background-color: white;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 86%;
+    padding-top: 2%;
+}
+/* side bar */
+.main-Content{
+    height: 700px;
+    /* background-color: black; */
+    font-family:sans-serif;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content : space-between;
+}
+.sidebar{
+    background-color: white;
+    width: 24%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 40px;
+    padding-top:20px;
+    padding-bottom:20px;
+    padding-left:2%;
+}
+.down p{
+    margin-top: 10px;
+
+}
+.para p{
+    margin-top:10%;
+    height: 30px;
+}

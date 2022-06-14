@@ -1,0 +1,1 @@
+//to retrieve all products registred
