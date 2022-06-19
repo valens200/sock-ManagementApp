@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <?php
 include_once "../../backEnd/config.php";
+session_start();
 class Getuser extends Connect{
     public $user;
     function __construct($id){
@@ -9,7 +10,7 @@ class Getuser extends Connect{
         $this->user = mysqli_fetch_assoc($result);
     }
 }
-$current = new Getuser($_GET['id']);    
+// $current = new Getuser($_GET['id']);    
 ?>
 <html lang="en">
 <head>
