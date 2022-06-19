@@ -18,10 +18,11 @@ class Login extends Connect
             return "No user found";
         }
         $row = mysqli_fetch_assoc($row);    
-        header("location: ../frontEnd/pages/dashboard.php");
         $_SESSION['id'] = $row['id'];
+        header("location: ../frontEnd/pages/dashboard.php");
     }
 }
 $user = new Login($_POST['email'], $_POST['password']);
-echo($user->check());
+$user->check();
+// echo($user->check());
 ?>
