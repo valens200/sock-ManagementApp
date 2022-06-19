@@ -19,13 +19,15 @@ class Signup extends Connect
     {
         parent::connect();
         $exist = mysqli_query($this->conn, "SELECT * FROM users WHERE email='$this->email'");
-        if($exist->num_rows > 0) { 
+        if ($exist->num_rows > 0) {
             return "already have an account";
         }
         $sql = "INSERT INTO users(email,password,firstname,lastname,telephone) VALUES('$this->email','$this->password', '$this->firstname', '$this->lastname', '$this->telephone')";
         $row = mysqli_query($this->conn, $sql);
-        if(!$row) return "something went wrong";
-        header("location: ../frontEnd/pages/dashboard.php");
+        if (!$row)
+            return "something went wrong";
+        $sql = mysqli_query($this->conn, "SELECT * FROM users WHERE email='$this->email'");
+        header("location: ../frontEnd/pages/dashboard.php?user=".$sql->fetch_assoc()['id']."");
     }
 }
 $user = new Signup($_POST['firstname'], $_POST['lastname'], $_POST['telephone'], $_POST['email'], $_POST['password']);
