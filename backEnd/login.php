@@ -12,14 +12,15 @@ class Login extends Connect
     function check()
     {
         parent::connect();
-        $sql = "SELECT * FROM users WHERE email = '$this->email' AND password = '$this->password";
-        $row = mysqli_query(parent::$conn, $sql);
+        $sql = "SELECT * FROM users WHERE email = '$this->email' AND password = '$this->password'";
+        $row = mysqli_query($this->conn, $sql);
         if ($row->num_rows == 0) {
             return "No user found";
         }
-        return $row;
+        $row = mysqli_fetch_assoc($row);    
+        header("location: ../frontEnd/pages/dashboard.php?user=".$row['id']."");
     }
 }
 $user = new Login($_POST['email'], $_POST['password']);
-$user->check();
+echo($user->check());
 ?>
