@@ -13,16 +13,23 @@ class RegisterProduct extends Connect
         $this->description = parent::test($description);
         $this->provider = parent::test($provider);
     }
-    function check(){
+    function check()
+    {
         parent::connect();
         $sql = "INSERT INTO products(title,price,description,provider) VALUES('$this->title','$this->price', '$this->description', '$this->provider')";
         $row = mysqli_query($this->conn, $sql);
-        if (!$row){
+        if (!$row) {
             return "something went wrong";
         }
         header("location: ../frontEnd/pages/dashboard.php");
     }
 }
-$product = new RegisterProduct($_POST['title'], $_POST['price'], $_POST['description'], $_POST['provider']);
-echo ($product->check());
+if ($_POST['title'] === "" || $_POST['price'] === "" || $_POST['description'] === "" || $_POST['provider'] === "") {
+    echo "Please fill all the fields";
+}
+else {
+
+    $product = new RegisterProduct($_POST['title'], $_POST['price'], $_POST['description'], $_POST['provider']);
+    echo($product->check());
+}
 ?>

@@ -3,7 +3,6 @@ class Connect
 {
     public $conn;
     function test($data){
-        if($data === "") echo "all data are required"; 
         $data = htmlspecialchars($data);
         $data = trim($data);
         return $data;
