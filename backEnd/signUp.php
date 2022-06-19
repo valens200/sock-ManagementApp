@@ -27,7 +27,8 @@ class Signup extends Connect
         if (!$row)
             return "something went wrong";
         $sql = mysqli_query($this->conn, "SELECT * FROM users WHERE email='$this->email'");
-        header("location: ../frontEnd/pages/dashboard.php?user=".$sql->fetch_assoc()['id']."");
+        header("location: ../frontEnd/pages/dashboard.php");
+        $_SESSION['id'] = mysqli_fetch_assoc($sql)['id'];
     }
 }
 $user = new Signup($_POST['firstname'], $_POST['lastname'], $_POST['telephone'], $_POST['email'], $_POST['password']);

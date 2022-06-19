@@ -21,7 +21,7 @@ class RegisterProduct extends Connect
         if (!$row) {
             return "something went wrong";
         }
-        header("location: ../frontEnd/pages/dashboard.php");
+        header("location: ../frontEnd/pages/dashboard.php?user=".$_SESSION['id']."");
     }
 }
 if ($_POST['title'] === "" || $_POST['price'] === "" || $_POST['description'] === "" || $_POST['provider'] === "") {
