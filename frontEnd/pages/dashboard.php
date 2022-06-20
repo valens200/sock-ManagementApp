@@ -80,12 +80,12 @@ include_once "../../backEnd/config.php";
           </div>
         <table border=1 style="border-collapse: collapse;">
           <tr>
-            <th>No.<th>
-            <th>title</th>
-            <th>Price </th>
-            <th>description<th>
-            <th>provider</th>
-          </tr>
+          <th>No.</th>
+          <th>title</th>
+          <th>price</th>
+          <th>description</th>
+          <th>provider</th>
+         </tr>
           <?php
            $n = new Connect();
            $n->connect();
