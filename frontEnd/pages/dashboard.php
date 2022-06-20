@@ -1,3 +1,7 @@
+<?php
+session_start();
+include_once "../../backEnd/config.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -29,8 +33,8 @@
     <link rel="stylesheet" href="../styles/dashbord.css" />
   </head>
   <body>
-    <?php include "../components/Navbar.php" ?>
-
+    
+<?php include_once "../components/Navbar.php" ?>
     <section>
       <div class="main-Content">
         <div class="sidebar">
@@ -74,167 +78,29 @@
               </div>
             </div>
           </div>
-          <div class="table">
-            <div class="row1 rowe">
-              <div>
-                <p>#</p>
-              </div>
-              <div>
-                <h6>Product Title</h6>
-              </div>
-              <div>
-                <h6>Ordered</h6>
-              </div>
-              <div>
-                <h6>Date added</h6>
-              </div>
-              <div>
-                <h6>Provider</h6>
-              </div>
-              <div>
-                <h6>Actions</h6>
-              </div>
-            </div>
-            <div class="row1 row1">
-              <div>
-                <p>1</p>
-              </div>
-              <div>
-                <h6>Product Title</h6>
-              </div>
-              <div>
-                <h6>Ordered</h6>
-              </div>
-              <div>
-                <h6>Date added</h6>
-              </div>
-              <div>
-                <h6>Provider</h6>
-              </div>
-              <div>
-                <h6>Actions</h6>
-              </div>
-            </div>
-            <div class="row1 row1">
-              <div>
-                <p>2</p>
-              </div>
-              <div>
-                <h6>Product Title</h6>
-              </div>
-              <div>
-                <h6>Ordered</h6>
-              </div>
-              <div>
-                <h6>Date added</h6>
-              </div>
-              <div>
-                <h6>Provider</h6>
-              </div>
-              <div>
-                <h6>Actions</h6>
-              </div>
-            </div>
-            <div class="row1 row1">
-              <div>
-                <p>3</p>
-              </div>
-              <div>
-                <h6>Product Title</h6>
-              </div>
-              <div>
-                <h6>Ordered</h6>
-              </div>
-              <div>
-                <h6>Date added</h6>
-              </div>
-              <div>
-                <h6>Provider</h6>
-              </div>
-              <div>
-                <h6>Actions</h6>
-              </div>
-            </div>
-            <div class="row1 row1">
-              <div>
-                <p>4</p>
-              </div>
-              <div>
-                <h6>Product Title</h6>
-              </div>
-              <div>
-                <h6>Ordered</h6>
-              </div>
-              <div>
-                <h6>Date added</h6>
-              </div>
-              <div>
-                <h6>Provider</h6>
-              </div>
-              <div>
-                <h6>Actions</h6>
-              </div>
-            </div>
-            <div class="row1 row1">
-              <div>
-                <p>5</p>
-              </div>
-              <div>
-                <h6>Product Title</h6>
-              </div>
-              <div>
-                <h6>Ordered</h6>
-              </div>
-              <div>
-                <h6>Date added</h6>
-              </div>
-              <div>
-                <h6>Provider</h6>
-              </div>
-              <div>
-                <h6>Actions</h6>
-              </div>
-            </div>
-            <div class="row1 row1">
-              <div>
-                <p>6</p>
-              </div>
-              <div>
-                <h6>Product Title</h6>
-              </div>
-              <div>
-                <h6>Ordered</h6>
-              </div>
-              <div>
-                <h6>Date added</h6>
-              </div>
-              <div>
-                <h6>Provider</h6>
-              </div>
-              <div>
-                <h6>Actions</h6>
-              </div>
-            </div>
-            <div class="row1 row1">
-              <div>
-                <p>7</p>
-              </div>
-              <div>
-                <h6>Product Title</h6>
-              </div>
-              <div>
-                <h6>Ordered</h6>
-              </div>
-              <div>
-                <h6>Date added</h6>
-              </div>
-              <div>
-                <h6>Provider</h6>
-              </div>
-              <div>
-                <h6>Actions</h6>
-              </div>
-            </div>
+        <table border=1 style="border-collapse: collapse;">
+          <tr>
+            <th>No.<th>
+            <th>title</th>
+            <th>Price </th>
+            <th>description<th>
+            <th>provider</th>
+          </tr>
+          <?php
+           $n = new Connect();
+           $n->connect();
+            $sql = mysqli_query($n->conn, "SELECT * FROM products");
+            while($row = mysqli_fetch_assoc($sql)){
+          ?>
+          <tr>
+            <td><?= $row['id']?></td>
+            <td><?= $row['title'] ?></td>
+            <td><?= $row['price'] ?> </td>
+            <td><?= $row['description'] ?> </td>
+            <td><?= $row['provider'] ?> </td>
+          </tr>
+          <?php } ?>
+        </table>
           </div>
         </div>
       </div>
